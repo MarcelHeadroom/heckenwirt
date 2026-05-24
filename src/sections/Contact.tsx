@@ -2,68 +2,66 @@ import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="kontakt" style={{ padding: "6rem 0", backgroundColor: "var(--color-background)" }}>
+    <section id="kontakt" style={{ padding: "6rem 0", backgroundColor: "var(--color-card)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 1.5rem" }}>
-        <div style={{ textAlign: "center", maxWidth: 640, margin: "0 auto 4rem" }}>
+        <div className="contact-header">
           <h2 style={{
             fontFamily: "var(--font-serif)",
             fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
             fontWeight: 700,
             color: "var(--color-primary)",
-            marginBottom: "1rem",
+            lineHeight: 1.25,
           }}>
             Kontakt & Anfahrt
           </h2>
-          <div style={{ width: 64, height: 4, backgroundColor: "var(--color-secondary)", margin: "0 auto 1.25rem" }} />
-          <p style={{ color: "var(--color-muted-fg)", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Reservierungen, Fragen oder einfach nur mal Hallo sagen. Wir freuen uns auf euch!
+          <p style={{ color: "var(--color-muted-fg)", fontSize: "0.9rem", lineHeight: 1.7, maxWidth: 280 }}>
+            Reservierungen, Fragen oder einfach Hallo sagen — wir freuen uns auf euch.
           </p>
         </div>
 
-        <div className="contact-grid">
+        <div className="contact-grid" style={{ marginTop: "3.5rem" }}>
           {/* Info */}
           <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             <div>
-              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: "var(--color-foreground)", marginBottom: "0.75rem" }}>
-                <MapPin size={18} color="var(--color-secondary)" /> Adresse
+              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.7rem", fontWeight: 700, color: "var(--color-foreground)", textTransform: "uppercase", letterSpacing: "0.2em", marginBottom: "0.75rem" }}>
+                <MapPin size={13} color="var(--color-secondary)" /> Adresse
               </h3>
-              <p style={{ color: "var(--color-muted-fg)", lineHeight: 1.8, fontSize: "0.95rem" }}>
+              <p style={{ color: "var(--color-foreground)", opacity: 0.65, lineHeight: 1.9, fontSize: "0.9rem" }}>
                 Heckenwirt<br />
                 Bad Mergentheimer Straße 26<br />
-                97999 Igersheim<br />
-                Deutschland
+                97999 Igersheim
               </p>
             </div>
 
             <div>
-              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: "var(--color-foreground)", marginBottom: "0.75rem" }}>
-                <Phone size={18} color="var(--color-secondary)" /> Kontakt
+              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.7rem", fontWeight: 700, color: "var(--color-foreground)", textTransform: "uppercase", letterSpacing: "0.2em", marginBottom: "0.75rem" }}>
+                <Phone size={13} color="var(--color-secondary)" /> Kontakt
               </h3>
-              <a href="tel:+4979312348" style={{ display: "block", color: "var(--color-muted-fg)", textDecoration: "none", padding: "0.2rem 0", fontSize: "0.95rem", transition: "color 0.2s" }}>
+              <a href="tel:+4979312348" style={{ display: "block", color: "var(--color-foreground)", opacity: 0.65, textDecoration: "none", padding: "0.2rem 0", fontSize: "0.9rem" }}>
                 +49 7931 2348
               </a>
-              <a href="mailto:info@heckenwirt-igersheim.de" style={{ display: "flex", alignItems: "center", gap: "0.35rem", color: "var(--color-muted-fg)", textDecoration: "none", padding: "0.2rem 0", fontSize: "0.95rem", transition: "color 0.2s" }}>
-                <Mail size={15} /> info@heckenwirt-igersheim.de
+              <a href="mailto:info@heckenwirt-igersheim.de" style={{ display: "flex", alignItems: "center", gap: "0.35rem", color: "var(--color-foreground)", opacity: 0.65, textDecoration: "none", padding: "0.2rem 0", fontSize: "0.9rem" }}>
+                <Mail size={13} /> info@heckenwirt-igersheim.de
               </a>
             </div>
 
             <div>
-              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: "var(--color-foreground)", marginBottom: "0.75rem" }}>
-                <Clock size={18} color="var(--color-secondary)" /> Öffnungszeiten
+              <h3 style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.7rem", fontWeight: 700, color: "var(--color-foreground)", textTransform: "uppercase", letterSpacing: "0.2em", marginBottom: "0.75rem" }}>
+                <Clock size={13} color="var(--color-secondary)" /> Öffnungszeiten
               </h3>
-              <table style={{ width: "100%", fontSize: "0.9rem", color: "var(--color-muted-fg)", borderCollapse: "collapse" }}>
+              <table style={{ width: "100%", fontSize: "0.875rem", borderCollapse: "collapse" }}>
                 <tbody>
                   <tr>
-                    <td style={{ padding: "0.35rem 0" }}>Montag</td>
-                    <td style={{ padding: "0.35rem 0", textAlign: "right", fontWeight: 600, color: "var(--color-foreground)" }}>Ruhetag</td>
+                    <td style={{ padding: "0.35rem 0", color: "var(--color-foreground)", opacity: 0.65 }}>Montag</td>
+                    <td style={{ padding: "0.35rem 0", textAlign: "right", color: "var(--color-foreground)", opacity: 0.45, fontStyle: "italic" }}>Ruhetag</td>
                   </tr>
                   <tr>
-                    <td style={{ padding: "0.35rem 0" }}>Di – Fr</td>
-                    <td style={{ padding: "0.35rem 0", textAlign: "right" }}>16:00 – 23:00 Uhr</td>
+                    <td style={{ padding: "0.35rem 0", color: "var(--color-foreground)", opacity: 0.65 }}>Di – Fr</td>
+                    <td style={{ padding: "0.35rem 0", textAlign: "right", color: "var(--color-foreground)", opacity: 0.65 }}>16:00 – 23:00</td>
                   </tr>
                   <tr style={{ borderTop: "1px solid var(--color-border)" }}>
-                    <td style={{ padding: "0.5rem 0 0.35rem" }}>Sa, So & Feiertage</td>
-                    <td style={{ padding: "0.5rem 0 0.35rem", textAlign: "right" }}>11:00 – 23:00 Uhr</td>
+                    <td style={{ padding: "0.5rem 0 0.35rem", color: "var(--color-foreground)", opacity: 0.65 }}>Sa, So & Feiertage</td>
+                    <td style={{ padding: "0.5rem 0 0.35rem", textAlign: "right", color: "var(--color-foreground)", opacity: 0.65 }}>11:00 – 23:00</td>
                   </tr>
                 </tbody>
               </table>
@@ -71,60 +69,40 @@ export function Contact() {
           </div>
 
           {/* Form */}
-          <div style={{
-            backgroundColor: "var(--color-card)",
-            border: "1px solid var(--color-border)",
-            padding: "2.5rem",
-          }}>
-            <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem", fontWeight: 700, color: "var(--color-foreground)", marginBottom: "1.5rem" }}>
+          <div style={{ backgroundColor: "var(--color-background)", border: "1px solid var(--color-border)", padding: "2.5rem" }}>
+            <h3 style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--color-foreground)", marginBottom: "1.5rem" }}>
               Tisch reservieren
             </h3>
             <form onSubmit={(e) => e.preventDefault()} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               <div className="form-row">
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Name</label>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                  <label style={labelStyle}>Name</label>
                   <input type="text" placeholder="Ihr Name" style={inputStyle} />
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Telefon</label>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                  <label style={labelStyle}>Telefon</label>
                   <input type="tel" placeholder="Für Rückfragen" style={inputStyle} />
                 </div>
               </div>
               <div className="form-row">
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Datum</label>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                  <label style={labelStyle}>Datum</label>
                   <input type="text" placeholder="z.B. Sa., 14. Juni" style={inputStyle} />
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                  <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Personen</label>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                  <label style={labelStyle}>Personen</label>
                   <input type="number" min="1" placeholder="Anzahl" style={inputStyle} />
                 </div>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Nachricht (optional)</label>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+                <label style={labelStyle}>Nachricht (optional)</label>
                 <textarea placeholder="Besondere Wünsche?" rows={3} style={{ ...inputStyle, resize: "vertical" }} />
               </div>
-              <button
-                type="submit"
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.12em",
-                  backgroundColor: "var(--color-secondary)",
-                  color: "white",
-                  border: "none",
-                  padding: "0.9rem",
-                  cursor: "pointer",
-                  width: "100%",
-                  transition: "background-color 0.2s",
-                }}
-              >
+              <button type="submit" style={submitStyle}>
                 Anfrage senden
               </button>
-              <p style={{ fontSize: "0.75rem", color: "var(--color-muted-fg)", textAlign: "center" }}>
-                Dies ist eine unverbindliche Anfrage. Wir bestätigen die Reservierung telefonisch.
+              <p style={{ fontSize: "0.72rem", color: "var(--color-muted-fg)", textAlign: "center", opacity: 0.8 }}>
+                Unverbindliche Anfrage — wir bestätigen telefonisch.
               </p>
             </form>
           </div>
@@ -146,6 +124,14 @@ export function Contact() {
       </div>
 
       <style>{`
+        .contact-header {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        @media (min-width: 768px) {
+          .contact-header { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+        }
         .contact-grid {
           display: grid;
           grid-template-columns: 1fr;
@@ -157,7 +143,7 @@ export function Contact() {
         .form-row {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 1rem;
+          gap: 0.75rem;
         }
         @media (max-width: 400px) {
           .form-row { grid-template-columns: 1fr; }
@@ -167,14 +153,39 @@ export function Contact() {
   );
 }
 
+const labelStyle: React.CSSProperties = {
+  fontSize: "0.65rem",
+  fontWeight: 700,
+  textTransform: "uppercase",
+  letterSpacing: "0.18em",
+  color: "var(--color-foreground)",
+  opacity: 0.55,
+};
+
 const inputStyle: React.CSSProperties = {
   width: "100%",
-  padding: "0.65rem 0.85rem",
+  padding: "0.6rem 0.8rem",
   border: "1px solid var(--color-border)",
   backgroundColor: "var(--color-background)",
   color: "var(--color-foreground)",
-  fontSize: "0.9rem",
+  fontSize: "0.875rem",
   fontFamily: "var(--font-sans)",
   outline: "none",
   boxSizing: "border-box",
+  borderRadius: 0,
+};
+
+const submitStyle: React.CSSProperties = {
+  fontFamily: "var(--font-serif)",
+  fontSize: "0.8rem",
+  fontWeight: 600,
+  textTransform: "uppercase",
+  letterSpacing: "0.18em",
+  backgroundColor: "var(--color-secondary)",
+  color: "white",
+  border: "none",
+  padding: "0.85rem",
+  cursor: "pointer",
+  width: "100%",
+  marginTop: "0.25rem",
 };

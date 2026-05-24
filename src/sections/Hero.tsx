@@ -9,25 +9,17 @@ export function Hero() {
           alt="Biergarten Atmosphäre"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
-        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.52)" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.55)" }} />
       </div>
 
-      <div style={{
-        position: "relative",
-        zIndex: 10,
-        textAlign: "center",
-        padding: "0 1.5rem",
-        maxWidth: 860,
-        marginTop: "5rem",
-      }}>
+      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 1.5rem", maxWidth: 860, marginTop: "5rem" }}>
         <span style={{
           display: "block",
           color: "var(--color-secondary)",
-          fontFamily: "var(--font-sans)",
           textTransform: "uppercase",
-          letterSpacing: "0.3em",
-          marginBottom: "1rem",
-          fontSize: "0.85rem",
+          letterSpacing: "0.35em",
+          marginBottom: "1.25rem",
+          fontSize: "0.75rem",
           fontWeight: 600,
         }}>
           Tradition seit Generationen
@@ -38,22 +30,19 @@ export function Hero() {
           fontWeight: 700,
           color: "white",
           marginBottom: "1.25rem",
-          lineHeight: 1.1,
-          textShadow: "0 2px 12px rgba(0,0,0,0.5)",
+          lineHeight: 1.08,
           fontSize: "clamp(2.8rem, 8vw, 5.5rem)",
         }}>
-          Willkommen im Heckenwirt
+          Willkommen im<br />Heckenwirt
         </h1>
 
         <p style={{
-          fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
-          color: "rgba(255,255,255,0.9)",
+          fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
+          color: "rgba(255,255,255,0.78)",
           fontWeight: 300,
-          marginBottom: "2.5rem",
-          maxWidth: 600,
-          margin: "0 auto 2.5rem",
-          lineHeight: 1.6,
-          textShadow: "0 1px 4px rgba(0,0,0,0.3)",
+          maxWidth: 520,
+          margin: "0 auto 2.75rem",
+          lineHeight: 1.7,
         }}>
           Einer der schönsten Biergärten im Taubertal. Kaltes Bier, deftiges vom Grill und Schatten unter alten Kastanien.
         </p>
@@ -64,14 +53,14 @@ export function Hero() {
             style={{
               fontFamily: "var(--font-serif)",
               fontWeight: 600,
-              fontSize: "0.95rem",
+              fontSize: "0.8rem",
               textTransform: "uppercase",
-              letterSpacing: "0.15em",
+              letterSpacing: "0.18em",
               backgroundColor: "var(--color-secondary)",
               color: "white",
-              padding: "1rem 2.5rem",
+              padding: "0.9rem 2.5rem",
               textDecoration: "none",
-              transition: "background-color 0.2s",
+              transition: "opacity 0.2s",
             }}
           >
             Tisch reservieren
@@ -81,15 +70,15 @@ export function Hero() {
             style={{
               fontFamily: "var(--font-serif)",
               fontWeight: 600,
-              fontSize: "0.95rem",
+              fontSize: "0.8rem",
               textTransform: "uppercase",
-              letterSpacing: "0.15em",
+              letterSpacing: "0.18em",
               backgroundColor: "transparent",
               color: "white",
-              padding: "1rem 2.5rem",
+              padding: "0.9rem 2.5rem",
               textDecoration: "none",
-              border: "2px solid rgba(255,255,255,0.7)",
-              transition: "background-color 0.2s, border-color 0.2s",
+              border: "1px solid rgba(255,255,255,0.8)",
+              transition: "background-color 0.2s",
             }}
           >
             Speisekarte ansehen
@@ -100,21 +89,13 @@ export function Hero() {
       <a
         href="#ueber-uns"
         aria-label="Nach unten scrollen"
-        style={{
-          position: "absolute",
-          bottom: "2rem",
-          left: "50%",
-          transform: "translateX(-50%)",
-          color: "rgba(255,255,255,0.65)",
-          textDecoration: "none",
-          animation: "bounce 2s infinite",
-        }}
+        style={{ position: "absolute", bottom: "2rem", left: "50%", transform: "translateX(-50%)", color: "rgba(255,255,255,0.45)", textDecoration: "none", animation: "heroBounce 2s infinite" }}
       >
-        <ArrowDown size={32} strokeWidth={1} />
+        <ArrowDown size={28} strokeWidth={1} />
       </a>
 
       <style>{`
-        @keyframes bounce {
+        @keyframes heroBounce {
           0%, 100% { transform: translateX(-50%) translateY(0); }
           50% { transform: translateX(-50%) translateY(8px); }
         }

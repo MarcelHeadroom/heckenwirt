@@ -2,39 +2,30 @@ export function Footer() {
   return (
     <footer style={{
       backgroundColor: "var(--color-primary)",
-      color: "rgba(255,255,255,0.7)",
-      padding: "3rem 0",
+      color: "rgba(255,255,255,0.55)",
+      padding: "2.5rem 0",
       borderTop: "1px solid rgba(255,255,255,0.1)",
     }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 1.5rem" }}>
         <div className="footer-inner">
           <div>
-            <span style={{
-              display: "block",
-              fontFamily: "var(--font-serif)",
-              fontSize: "1.5rem",
-              fontWeight: 700,
-              letterSpacing: "0.12em",
-              color: "white",
-              marginBottom: "0.5rem",
-            }}>
+            <span style={{ display: "block", fontFamily: "var(--font-serif)", fontSize: "1.2rem", fontWeight: 700, letterSpacing: "0.12em", color: "white", marginBottom: "0.35rem" }}>
               HECKENWIRT
             </span>
-            <p style={{ fontSize: "0.85rem" }}>
-              Bad Mergentheimer Str. 26 · 97999 Igersheim
-            </p>
-            <p style={{ fontSize: "0.85rem", marginTop: "0.25rem" }}>
-              &copy; {new Date().getFullYear()} Heckenwirt Igersheim. Alle Rechte vorbehalten.
+            <p style={{ fontSize: "0.8rem", lineHeight: 1.6 }}>
+              Bad Mergentheimer Straße 26<br />
+              97999 Igersheim
             </p>
           </div>
 
-          <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
-            <a href="#" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.85rem", transition: "color 0.2s" }}>
-              Impressum
-            </a>
-            <a href="#" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: "0.85rem", transition: "color 0.2s" }}>
-              Datenschutz
-            </a>
+          <div>
+            <p style={{ fontSize: "0.75rem", marginBottom: "0.4rem" }}>
+              &copy; {new Date().getFullYear()} Heckenwirt Igersheim
+            </p>
+            <div style={{ display: "flex", gap: "1.5rem", justifyContent: "flex-end" }}>
+              <a href="#" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none", fontSize: "0.75rem" }}>Impressum</a>
+              <a href="#" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none", fontSize: "0.75rem" }}>Datenschutz</a>
+            </div>
           </div>
         </div>
       </div>
@@ -43,16 +34,10 @@ export function Footer() {
         .footer-inner {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          text-align: center;
-          gap: 1.5rem;
+          gap: 1.25rem;
         }
         @media (min-width: 768px) {
-          .footer-inner {
-            flex-direction: row;
-            justify-content: space-between;
-            text-align: left;
-          }
+          .footer-inner { flex-direction: row; justify-content: space-between; align-items: flex-start; }
         }
       `}</style>
     </footer>
