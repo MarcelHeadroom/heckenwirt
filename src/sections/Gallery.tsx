@@ -11,20 +11,17 @@ export function Gallery() {
   return (
     <section id="galerie" style={{ padding: "6rem 0", backgroundColor: "#1c130a" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 1.5rem" }}>
-        <div style={{ textAlign: "center", maxWidth: 640, margin: "0 auto 4rem" }}>
+        <div style={{ textAlign: "center", maxWidth: 700, margin: "0 auto 3.5rem" }}>
           <h2 style={{
             fontFamily: "var(--font-serif)",
             fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)",
             fontWeight: 700,
             color: "white",
-            marginBottom: "1rem",
+            marginBottom: "1.25rem",
           }}>
-            Impressionen
+            Ein kleiner Einblick in den Heckenwirt
           </h2>
-          <div style={{ width: 64, height: 4, backgroundColor: "var(--color-secondary)", margin: "0 auto 1.25rem" }} />
-          <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Bilder sagen mehr als tausend Worte. Ein kleiner Einblick in den Heckenwirt.
-          </p>
+          <div style={{ width: 64, height: 4, backgroundColor: "var(--color-secondary)", margin: "0 auto" }} />
         </div>
 
         <div className="gallery-grid">

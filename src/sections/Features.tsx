@@ -48,9 +48,6 @@ export function Features() {
             Was den Heckenwirt besonders macht
           </h2>
           <div style={{ width: 64, height: 4, backgroundColor: "var(--color-secondary)", margin: "0 auto 1.25rem" }} />
-          <p style={{ color: "var(--color-muted-fg)", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Ehrliche Gastronomie ohne Schnickschnack. Wir konzentrieren uns auf das, was wirklich zählt.
-          </p>
         </div>
 
         <div className="features-grid">

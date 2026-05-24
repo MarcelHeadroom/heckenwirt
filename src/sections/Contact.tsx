@@ -83,7 +83,7 @@ export function Contact() {
               <div className="form-row">
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                   <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Name</label>
-                  <input type="text" placeholder="Dein Name" style={inputStyle} />
+                  <input type="text" placeholder="Ihr Name" style={inputStyle} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                   <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Telefon</label>
@@ -93,7 +93,7 @@ export function Contact() {
               <div className="form-row">
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                   <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Datum</label>
-                  <input type="date" style={inputStyle} />
+                  <input type="text" placeholder="z.B. Sa., 14. Juni" style={inputStyle} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                   <label style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--color-foreground)" }}>Personen</label>

@@ -60,7 +60,7 @@ export function Menu() {
           </h2>
           <div style={{ width: 64, height: 4, backgroundColor: "var(--color-secondary)", margin: "0 auto 1.25rem" }} />
           <p style={{ color: "var(--color-muted-fg)", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Deftig, regional und immer frisch. Wir beziehen unsere Zutaten von Bauern und Metzgern aus dem Taubertal.
+            Deftig, regional und immer frisch.
           </p>
         </div>
 
