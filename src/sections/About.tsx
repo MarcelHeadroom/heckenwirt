@@ -57,7 +57,7 @@ export function About() {
 
           <div style={{ flex: 1, position: "relative" }}>
             <img
-              src="https://images.unsplash.com/photo-1543362906-acfc16c67564?w=800&q=80"
+              src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80"
               alt="Ein kühles Bier im Heckenwirt"
               style={{ width: "100%", height: "auto", objectFit: "cover", boxShadow: "0 20px 60px rgba(0,0,0,0.15)" }}
             />

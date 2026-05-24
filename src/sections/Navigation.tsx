@@ -71,7 +71,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="tel:+4979312348"
+            href="#kontakt"
             style={{
               fontFamily: "var(--font-serif)",
               fontSize: "0.8rem",
@@ -137,7 +137,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="tel:+4979312348"
+            href="#kontakt"
             style={{
               marginTop: "0.5rem",
               display: "block",

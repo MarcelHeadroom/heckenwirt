@@ -1,10 +1,10 @@
 const images = [
-  { src: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=800&q=80", alt: "Biergarten Tische" },
-  { src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80", alt: "Kaltes Bier" },
-  { src: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=800&q=80", alt: "Restaurant Atmosphäre" },
-  { src: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&q=80", alt: "Gegrilltes" },
-  { src: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80", alt: "Frische Küche" },
-  { src: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=800&q=80", alt: "Gastlichkeit" },
+  { src: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80", alt: "Biergarten im Sommer" },
+  { src: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80", alt: "Frisches Bier" },
+  { src: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80", alt: "Grill & Bratwurst" },
+  { src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80", alt: "Gemütliche Atmosphäre" },
+  { src: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=80", alt: "Geselligkeit" },
+  { src: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=800&q=80", alt: "Sommerabend" },
 ];
 
 export function Gallery() {

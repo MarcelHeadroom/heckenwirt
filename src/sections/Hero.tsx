@@ -5,7 +5,7 @@ export function Hero() {
     <section style={{ position: "relative", height: "100dvh", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         <img
-          src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
           alt="Biergarten Atmosphäre"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
@@ -60,7 +60,7 @@ export function Hero() {
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
           <a
-            href="tel:+4979312348"
+            href="#kontakt"
             style={{
               fontFamily: "var(--font-serif)",
               fontWeight: 600,
