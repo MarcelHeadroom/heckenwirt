@@ -1,5 +1,5 @@
 const images = [
-  { src: "https://images.unsplash.com/photo-1574488344569-8086207b1a03?w=800&q=80", alt: "Biergarten Tische" },
+  { src: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=800&q=80", alt: "Biergarten Tische" },
   { src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80", alt: "Kaltes Bier" },
   { src: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=800&q=80", alt: "Restaurant Atmosphäre" },
   { src: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&q=80", alt: "Gegrilltes" },
