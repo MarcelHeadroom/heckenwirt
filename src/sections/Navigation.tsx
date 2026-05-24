@@ -5,7 +5,6 @@ const navLinks = [
   { name: "Über uns", href: "#ueber-uns" },
   { name: "Speisekarte", href: "#speisekarte" },
   { name: "Galerie", href: "#galerie" },
-  { name: "Events", href: "#events" },
   { name: "Kontakt", href: "#kontakt" },
 ];
 

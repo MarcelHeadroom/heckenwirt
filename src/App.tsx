@@ -4,7 +4,6 @@ import { About } from "./sections/About";
 import { Features } from "./sections/Features";
 import { Menu } from "./sections/Menu";
 import { Gallery } from "./sections/Gallery";
-import { Events } from "./sections/Events";
 import { Contact } from "./sections/Contact";
 import { Footer } from "./sections/Footer";
 
@@ -18,7 +17,6 @@ function App() {
         <Features />
         <Menu />
         <Gallery />
-        <Events />
         <Contact />
       </main>
       <Footer />
